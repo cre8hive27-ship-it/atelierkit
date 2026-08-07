@@ -6,7 +6,9 @@ type RevealProps = {
   className?: string;
   delay?: number;
   as?: ElementType;
+  id?: string;
 };
+
 
 export function Reveal({ children, className, delay = 0, as: Tag = "div" }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
