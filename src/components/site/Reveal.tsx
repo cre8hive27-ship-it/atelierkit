@@ -10,7 +10,7 @@ type RevealProps = {
 };
 
 
-export function Reveal({ children, className, delay = 0, as: Tag = "div" }: RevealProps) {
+export function Reveal({ children, className, delay = 0, as: Tag = "div", id }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
   const [shown, setShown] = useState(false);
 
