@@ -35,6 +35,8 @@ export function Reveal({ children, className, delay = 0, as: Tag = "div", id }: 
   return (
     <Tag
       ref={ref}
+      id={id}
+
       style={{ transitionDelay: `${delay}ms` }}
       className={cn("reveal", shown && "reveal-in", className)}
     >
